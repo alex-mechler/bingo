@@ -13,10 +13,10 @@ table {
 	width: 100%;
 	min-width: 100%;
 	float: left;
+	font-size: .5em;
 }
 
 .bingo, .free {
-	font-size: .5em;
 	text-align: center;
 	width: 20%;
 	height: 18%;
@@ -28,4 +28,5 @@ th {
 	text-align: center;
 	height: 5%;
 	min-height: 5%;
+	width: 20%;
 }
