@@ -21,39 +21,39 @@
         </thead>
         <tbody>
           <tr>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
           </tr>
           <tr>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
           </tr>
           <tr>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="free bg-success">FREE</td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="free bg-success align-middle">FREE</td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
           </tr>
           <tr>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
           </tr>
           <tr>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
-            <td class="bingo"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
+            <td class="bingo align-middle"></td>
           </tr>
         </tbody>
       </table>
@@ -63,6 +63,37 @@
       //$('body').height(document.documentElement.clientHeight);
       $('.bingo').click(function(){
         $(this).toggleClass("bg-success");
+      });
+      let spaces = [
+        "Vans/Converse with dress pants",
+        "Creddle Resume",
+        "An art student complaining about the lack of employers",
+        "\"We are only looking for full time\"",
+        "Government recruiters who can't tell you what they do",
+        "Long lines at the Datto table",
+        "Someone fist pumping after getting an interview",
+        "Student mentioning eSports as an extracurricular",
+        "Students bragging about who got more interviews",
+        "Student who forgot resumes",
+        "Companies just telling everyone to appply online",
+        "Someone telling their friend they are totally getting the Microsoft job",
+        "Someone who clearly hasn't shaved",
+        "Someone overdressed in a tux",
+        "Someone not understanding how lines work",
+        "White socks with black dress pants",
+        "Girl wearing a skirt that is entirely too short",
+        "A shirt with sweat stains",
+        "Recruiter poaching people from other lines",
+        "Student dropping a pile of resumes",
+        "Resume on paper so firm its basically cardboard",
+        "A student crying",
+        "An upsidedown name tag",
+        "A company with the word \"Blockchain\" on thier signs/posters"
+      ];
+
+      let random = spaces.sort(() => .5 - Math.random()).slice(0,25);
+      $('.bingo').each(function(index){
+        $(this).text(random[index]);
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
