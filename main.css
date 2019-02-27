@@ -16,6 +16,7 @@ table {
 }
 
 .bingo, .free {
+	font-size: .2em;
 	text-align: center;
 	width: 20%;
 	height: 18%;
