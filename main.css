@@ -5,6 +5,7 @@ html, body {
 
 table {
 	height: 100%;
+	table-layout: fixed;
 }
 
 .bingo-board {
