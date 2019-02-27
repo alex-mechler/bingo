@@ -19,6 +19,7 @@ table {
 .bingo, .free {
 	text-align: center;
 	width: 20%;
+	min-width: 20%;
 	height: 18%;
 	min-height: 18%;
 	vertical-align: middle;
@@ -29,4 +30,5 @@ th {
 	height: 5%;
 	min-height: 5%;
 	width: 20%;
+	min-width: 20%;
 }
