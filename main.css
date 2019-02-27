@@ -1,3 +1,8 @@
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
 table {
 	height: 100%;
 }
@@ -5,14 +10,18 @@ table {
 .bingo-board {
 	height: 100%;
 	min-height: 100%;
+	width: 100%;
+	min-width: 100%;
+	float: left;
 }
 
-.bingo {
+.bingo, .free {
 	text-align: center;
 	width: 20%;
 	height: 18%;
 	min-height: 18%;
 	line-height: 18%;
+	vertical-align: middle;
 }
 
 th {

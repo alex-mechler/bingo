@@ -8,7 +8,7 @@
     <title>RIT Career Fair Bingo</title>
   </head>
   <body>
-    <div class="table-responsive bingo-board">
+    <div class="bingo-board">
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -37,7 +37,7 @@
           <tr>
             <td class="bingo"></td>
             <td class="bingo"></td>
-            <td class="bingo bg-success">FREE</td>
+            <td class="free bg-success">FREE</td>
             <td class="bingo"></td>
             <td class="bingo"></td>
           </tr>
@@ -60,7 +60,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>
-      $('body').height(document.documentElement.clientHeight);
+      //$('body').height(document.documentElement.clientHeight);
       $('.bingo').click(function(){
         $(this).toggleClass("bg-success");
       });
