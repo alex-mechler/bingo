@@ -59,13 +59,18 @@
       </table>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>
+    <script type="text/javascript">
       //$('body').height(document.documentElement.clientHeight);
+      
+      let vh = window.innerHeight * .01;
+      document.documentElement.style.setProperty('--vh', '${vh}px');
+
       $('.bingo').click(function(){
         $(this).toggleClass("bg-success");
       });
+      
       let spaces = [
-        "Vans/Converse with dress pants",
+        "Vans / Converse with dress pants",
         "Creddle Resume",
         "An art student complaining about the lack of employers",
         "\"We are only looking for full time\"",
@@ -75,7 +80,7 @@
         "Student mentioning eSports as an extracurricular",
         "Students bragging about who got more interviews",
         "Student who forgot resumes",
-        "Companies just telling everyone to appply online",
+        "Companies just telling everyone to apply online",
         "Someone telling their friend they are totally getting the Microsoft job",
         "Someone who clearly hasn't shaved",
         "Someone overdressed in a tux",
@@ -88,7 +93,7 @@
         "Resume on paper so firm its basically cardboard",
         "A student crying",
         "An upsidedown name tag",
-        "A company with the word \"Blockchain\" on thier signs/posters"
+        "A company with the word \"Blockchain\" on thier signs / posters"
       ];
 
       let random = spaces.sort(() => .5 - Math.random()).slice(0,25);
