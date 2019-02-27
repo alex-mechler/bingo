@@ -1,0 +1,22 @@
+table {
+	height: 100%;
+}
+
+.bingo-board {
+	height: 100%;
+	min-height: 100%;
+}
+
+.bingo {
+	text-align: center;
+	width: 20%;
+	height: 18%;
+	min-height: 18%;
+	line-height: 18%;
+}
+
+th {
+	text-align: center;
+	height: 5%;
+	min-height: 5%;
+}
