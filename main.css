@@ -20,6 +20,7 @@ table {
 	text-align: center;
 	width: 20%;
 	min-width: 20%;
+	max-width: 20%;
 	height: 18%;
 	min-height: 18%;
 	vertical-align: middle;
@@ -31,4 +32,5 @@ th {
 	min-height: 5%;
 	width: 20%;
 	min-width: 20%;
+	max-width: 20%;
 }
